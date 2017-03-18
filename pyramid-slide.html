@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="pyramid-slide.js"></script>
+	<link rel="stylesheet" href="styles.css">
+   	<script src="pyramid-slide.js"></script>
 	<script src="jquery-3.1.1.min.js"></script>		
 </head>
-	<div style="align: center; text-align:center">
-    <h1 style="color:white; margin: auto;
-	padding:25px; background-color:purple; 
-	align:justify; text-align:center; width:700px;">Pyramid Slide</h1>
+<body>
+	<div id="top">
+	<h1>Pyramid Slide</h1>
 	</div>
-    <p>
-	<div style="align: center; margin:auto; width: 750px; border-style: solid; border-bottom-style: none;">
-	<span style="background-color:Lightgrey; text-align:center;">
+	<p>
+	
+	<div id="mid">
+	<span id="first">
+	
 	<label for="symbol">Brick Symbol</label>
 	<select name="symbol" onchange="symbolFunction(this.value)">
 	<option value="#">#</option>
@@ -19,17 +21,14 @@
 	<option value="X">X</option>
 	<option value="$">$</option>	
 	</select>
-	<pre>       </pre>	
+
 	<label for="height">How High?</label>
-	<input type="range" name="height" min="1" max="20" oninput="sizeFunction(this.value)">
-	<label for="range" value=range.value></label>	
+	<input type="range" name="height" min="1" max="20" value="12"  oninput="sizeFunction(this.value)">
 	<span id="range1">12</span>
 	</span>
+	<p>
+    <span id="pyramid"></span>
 	</div>
-    <div id="pyramid" style="align:center; margin:auto; 
-	text-align:center; width: 750px; border-style: solid;">		
-	
-	</div>
-    </p>
+	</p>
 </body>
 </html>
